@@ -1,0 +1,9 @@
+# Temp files
+*~
+\#*\#
+.DS_Store
+
+# Temp directories
+
+/_downloads/
+/_results/

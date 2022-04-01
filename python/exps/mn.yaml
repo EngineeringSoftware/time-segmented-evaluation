@@ -1,0 +1,42 @@
+task: MN
+setups:
+  - MP
+  - CP
+  - T
+num_trials: 3
+metrics:
+  - exact_match
+  - set_match_f
+  - set_match_p
+  - set_match_r
+models:
+  - name: Code2VecPOPL19
+    exps:
+      - Code2VecPOPL19-1
+      - Code2VecPOPL19-2
+      - Code2VecPOPL19-3
+  - name: Code2SeqICLR19
+    exps:
+      - Code2SeqICLR19-1
+      - Code2SeqICLR19-2
+      - Code2SeqICLR19-3
+table_args:
+  metrics:
+    - set_match_p
+    - set_match_r
+    - set_match_f
+    - exact_match
+plot_args:
+  metrics:
+    set_match_p: Precision
+    set_match_r: Recall
+    set_match_f: F1
+    exact_match: EM
+  metrics_percent:
+    set_match_p: True
+    set_match_r: True
+    set_match_f: True
+    exact_match: True
+  models:
+    Code2VecPOPL19: Code2Vec
+    Code2SeqICLR19: Code2Seq

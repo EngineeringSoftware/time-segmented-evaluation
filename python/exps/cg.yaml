@@ -1,0 +1,50 @@
+task: CG
+setups:
+  - MP
+  - CP
+  - T
+num_trials: 3
+metrics:
+  - exact_match
+  - bleu
+  - meteor
+  - rouge_l_f
+  - rouge_l_p
+  - rouge_l_r
+models:
+  - name: DeepComHybridESE19
+    exps:
+      - DeepComHybridESE19-1
+      - DeepComHybridESE19-2
+      - DeepComHybridESE19-3
+  - name: RNNBaseline
+    exps:
+      - RNNBaseline-1
+      - RNNBaseline-2
+      - RNNBaseline-3
+  - name: TransformerACL20
+    exps:
+      - TransformerACL20-1
+      - TransformerACL20-2
+      - TransformerACL20-3
+table_args:
+  metrics:
+    - bleu
+    - meteor
+    - rouge_l_f
+    - exact_match
+plot_args:
+  metrics:
+    bleu: BLEU
+    meteor: METEOR
+    rouge_l_f: ROUGE-L
+    exact_match: EM
+  metrics_percent:
+    bleu: True
+    meteor: True
+    rouge_l_f: True
+    exact_match: True
+  models:
+    DeepComHybridESE19: DeepComHybrid
+    RNNBaseline: Seq2Seq
+    TransformerACL20: Transformer
