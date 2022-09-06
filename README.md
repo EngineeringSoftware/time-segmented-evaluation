@@ -4,7 +4,7 @@ This repo hosts the code and data for the following ACL 2022 paper:
 
 Title: [Impact of Evaluation Methodologies on Code Summarization][paper-utcs]
 
-Authors: [Pengyu Nie](http://cozy.ece.utexas.edu/~pynie/), [Jiyang Zhang](https://jiyangzhang.github.io/), [Junyi Jessy Li](https://jessyli.com/), [Raymond J. Mooney](https://www.cs.utexas.edu/~mooney/), [Milos Gligoric](http://users.ece.utexas.edu/~gligoric/)
+Authors: [Pengyu Nie](https://pengyunie.github.io/), [Jiyang Zhang](https://jiyangzhang.github.io/), [Junyi Jessy Li](https://jessyli.com/), [Raymond J. Mooney](https://www.cs.utexas.edu/~mooney/), [Milos Gligoric](https://users.ece.utexas.edu/~gligoric/)
 
 ```bibtex
 @inproceedings{NieETAL22EvalMethodologies,
